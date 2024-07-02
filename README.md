@@ -35,7 +35,7 @@ Changes I made in Frontend
 ```sh
 let runningTotal = 0;
 ```
-- I totally removed it because the runningTotal inside the reduce cant reach the declaration. it is something releted to JavaScript Closure or Scope
+- I totally removed it because the runningTotal inside the reduce cant reach the initialization. it is something releted to JavaScript Closure or Scope
 ```sh
   const total = (() => {
     let runningTotal = 0;
@@ -86,6 +86,7 @@ $ npm install
 ## Project Setup/Configuration
 
 Make sure to copy the `.env.example`/`.env-example` or rename them to `.env.development` or `.env` in each sub directories (backend/frontend).
+
 Note: Env files are not supposed to push in repo but for this case I used `.env.example` and `.env-example` to put the database URI
 
 ## Run the BACKEND
@@ -93,16 +94,20 @@ Note: Env files are not supposed to push in repo but for this case I used `.env.
 ### Compile and Hot-Reload for Development
 
 ```sh
+docker-compose up
+```
+If you dont want to run the docker or you don't have a docker you can use below command but you have to replace the MONGODB_URI with working or live Mongodb Database URI 
+```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Compile and Minify for Production
 
 ```sh
 npm run build
 ```
 
-### Type-Check, Compile and Minify for Production with Type Checking
+### Compile and Minify for Production with Type Checking
 
 ```sh
 npm run build:tsc
