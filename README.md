@@ -85,7 +85,7 @@ $ npm install
 
 ## Project Setup/Configuration
 
-Make sure to copy the `.env.example`/`.env-example` or rename them to `.env.development` in each sub directories (backend/frontend).
+Make sure to copy the `.env.example`/`.env-example` or rename them to `.env.development` or `.env` in each sub directories (backend/frontend).
 Note: Env files are not supposed to push in repo but for this case I used `.env.example` and `.env-example` to put the database URI
 
 ## Run the BACKEND
