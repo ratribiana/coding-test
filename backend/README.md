@@ -46,16 +46,20 @@ Before starting the project, make sure to set up the database credentials in the
 ### Compile and Hot-Reload for Development
 
 ```sh
+docker-compose up
+```
+If you dont want to run the docker or you don't have a docker you can use below command but you have to replace the MONGODB_URI with working or live Mongodb Database URI 
+```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Compile and Minify for Production
 
 ```sh
 npm run build
 ```
 
-### Type-Check, Compile and Minify for Production with Type Checking
+### Compile and Minify for Production with Type Checking
 
 ```sh
 npm run build:tsc
