@@ -31,11 +31,11 @@ Changes I made in Frontend
 - I added redux and redux and RTK (Redux ToolKit) for state management. Redux toolkit simplifies most Redux tasks and prevents common mistakes
 - I added TailwindCSS (for styling) because it is a utility-first CSS framework packed with classes which I can directly add to React components/HTML elements
 - I created 3 components for Task 1: User Profiles (UserProfileForm and UserProfileManagement) and Task 2: Data table (DataComponent) that can be found in components directory
-- The first error error I found in React App.tsx is the use of runningTotal
+- The first error I found in React App.tsx was the use of runningTotal
 ```sh
 let runningTotal = 0;
 ```
-- I totally removed it because the runningTotal inside the reduce cant reach the initialization. it is something releted to JavaScript Closure or Scope
+- I totally removed it because the runningTotal inside the .reduce() cant reach the initialization. it is something releted to JavaScript Closure or Scope
 ```sh
   const total = (() => {
     let runningTotal = 0;
